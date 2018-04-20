@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>For a Few Billion</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var earnings = .01;
+		var amount = .01;
+		for (var i = 2; i <= 100000; i++) {
+			earnings = earnings * 2
+			console.log("earnings", earnings)
+			amount = amount + earnings
+			console.log("amount", amount)
+			if(amount == Infinity){
+				console.log(i)
+				break
+			}
+		}
+	</script>
+</html>
